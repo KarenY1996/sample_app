@@ -36,7 +36,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  
   gem 'spring',      '1.1.3'
 end
 
@@ -46,6 +46,10 @@ group :test do
   gem 'mini_backtrace',     '0.1.3'
   gem 'guard-minitest',     '2.3.1'
 end
+
+group :development do 
+	gem 'web-console', '~> 2.0' 
+end 
 
 group :production do
   gem 'pg',             '0.17.1'
